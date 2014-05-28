@@ -1,0 +1,20 @@
+// EuclideanHeuristic.cpp: implementation of the CEuclideanHeuristic class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "EuclideanHeuristic.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CEuclideanHeuristic::CEuclideanHeuristic(NUMBER goal) : CAstarHeuristic<int>(goal)
+{
+	
+}
+
+CEuclideanHeuristic::~CEuclideanHeuristic()
+{
+
+}

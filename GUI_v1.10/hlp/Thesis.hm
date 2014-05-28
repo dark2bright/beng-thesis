@@ -1,0 +1,93 @@
+ 
+// Commands (ID_* and IDM_*) 
+HID_APPLY_BUTTON                        0x1040F
+HID_GRAPH_SELECT                        0x18003
+HID_GRAPH_VERTEX                        0x18004
+HID_GRAPH_EDGE                          0x18005
+HID_GRAPH_REMOVE                        0x18006
+HID_GRAPH_PROPERTIES                    0x18007
+HID_TOOLS_OPTIONS                       0x18008
+HID_EDIT_DELETE                         0x1800A
+HID_UTILITIES_BFT                       0x1800E
+HID_UTILITIES_TOPO                      0x1800F
+HID_ALGORITHM_PRIM                      0x18010
+HID_ALGORITHM_KRUSKAL                   0x18011
+HID_ALGORITHM_DIJKSTRA                  0x18012
+HID_ALGORITHM_FLOYD                     0x18013
+HID_UTILITIES_EULER                     0x18014
+HID_UTILITIES_CUT_VERTEX                0x18015
+HID_OPTIONS_AUTOMATIC                   0x18017
+HID_OPTIONS_MANUAL                      0x18018
+HID_ANIMATION_NEXT                      0x18019
+HID_ANIMATION_RESET                     0x1801A
+HID_UTILITIES_COLOR                     0x1801B
+HID_ALGORITHM_BELLMAN_FORD              0x1801C
+HID_UTILITIES_BRIDGE_EDGE               0x1801D
+HID_UTILITIES_CONNECTED_COMPONENTS      0x1801E
+HID_UTILITIES_BICONNECTED_COMPONENTS    0x1801F
+HID_UTILITIES_CONNECTED_COMPONENT       0x18020
+HID_UTILITIES_BICONNECTED_COMPONENT     0x18021
+HID_UTILITIES_TRANSITIVE_CLOSURE        0x18022
+HID_UTILITIES_CYCLE                     0x18023
+HID_GRAPH_GENERATE_COMPLETEGRAPH        0x18024
+HID_GRAPH_GENERATE_RANDOMGRAPH          0x18025
+HID_ALGORITHM_CRITICAL_PATH             0x18026
+HID_ALGORITHM_SSP_DAG                   0x18027
+HID_NETWORK_CHECK                       0x18028
+HID_NPC_PLANAR                          0x18029
+HID_NPC_HAMILTON                        0x1802A
+HID_VIEW_GRAPH                          0x1802B
+HID_VIEW_ALGORITHMS                     0x1802C
+HID_VIEW_UTILITIES                      0x1802D
+HID_VIEW_OUTPUT                         0x1802F
+HID_VIEW_NETWORK                        0x18030
+HID_NETWORK_FORD_FULKERSON              0x18031
+HID_NETWORK_RESIDUAL                    0x18032
+HID_UTILITIES_VERTEX_COVER              0x18033
+HID_GRAPH_RESIZE                        0x18034
+HID_GRAPH_CLEAR                         0x18035
+HID_LAYOUT_ELLIPSE                      0x18037
+HID_OPTIONS_DELAYTIME                   0x18038
+HID_DEMO_FORDFULKERSON                  0x18039
+HID_DEMO_FORD_FULKERSON                 0x1803A
+HID_NETWORK_MAXIMUM_BIPARTITE_MATCHING  0x1803B
+HID_ALGORITHM_JOHNSON                   0x1803C
+HID_UTILITIES_PREORDER                  0x1803D
+HID_UTILITIES_POSTORDER                 0x1803E
+HID_UTILITIES_HAMILTON                  0x1803F
+HID_ALGORITHM_ASTAR                     0x18040
+HID_ALGORITHM_TSP                       0x18041
+HID_ALGORITHM_CHINESE_POSTMAN           0x18042
+HID_DEMO_ASTAR                          0x18043
+ 
+// Prompts (IDP_*) 
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20080
+HIDR_GMLTYPE                            0x20081
+HIDR_GRAPH                              0x20086
+HIDR_UTILITIES                          0x2009D
+HIDR_ALGORITHMS                         0x200A2
+HIDR_ANIMATION                          0x200A4
+HIDR_EDIT                               0x200A6
+HIDR_NETWORK                            0x200AB
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_NEW_VERTEX_DIALOG                  0x2008B
+HIDD_NEW_GRAPH_DIALOG                   0x2008C
+HIDD_NEW_EDGE_DIALOG                    0x2008D
+HIDD_OPTIONS_DIALOG                     0x20092
+HIDD_VERTEX_TAB                         0x20093
+HIDD_EDGE_TAB                           0x20095
+HIDD_VERTEX_PROPERTIES_DIALOG           0x20098
+HIDD_EDGE_PROPERTIES_DIALOG             0x20099
+HIDD_ANIMATION_DIALOG                   0x2009A
+HIDD_OUTPUT_DIALOG                      0x2009F
+HIDD_RESIZE_GRAPH_DIALOG                0x200A5
+HIDD_GENERATE_GRAPH_DIALOG              0x200AF
+HIDD_GRAPH_PROPERTIES_DIALOG            0x200B1
+HIDD_DELAY_TIME_DIALOG                  0x200B3
+HIDD_SEARCH_DIALOG                      0x200B4
+ 
+// Frame Controls (IDW_*) 

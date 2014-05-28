@@ -1,0 +1,18 @@
+// Partition.cpp: implementation of the CPartition class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "Partition.h"
+#include "NullObject.h"
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CPartition::CPartition(UINT n) 
+	: CSet (n) {}
+
+CObjectEx& CPartition::find(const CObjectEx &) const
+{
+	return CNullObject::instance();
+}

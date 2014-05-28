@@ -1,0 +1,25 @@
+// AstarHeuristic.cpp: implementation of the CAstarHeuristic class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "AstarHeuristic.h"
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CAstarHeuristic::CAstarHeuristic()
+{
+
+}
+
+CAstarHeuristic::~CAstarHeuristic()
+{
+
+}
+
+NUMBER CAstarHeuristic::getGoal() const
+{
+	return m_goal;
+}

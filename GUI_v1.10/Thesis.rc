@@ -1,0 +1,1204 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Thesis.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Thesis.ico"
+IDR_GMLTYPE             ICON    DISCARDABLE     "res\\ThesisDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_GRAPH               BITMAP  DISCARDABLE     "res\\graph.bmp"
+IDB_EMAIL_BITMAP        BITMAP  DISCARDABLE     "res\\email.bmp"
+IDB_NEXT_BITMAP         BITMAP  DISCARDABLE     "res\\next.bmp"
+IDB_PREV_BITMAP         BITMAP  DISCARDABLE     "res\\prev.bmp"
+IDR_UTILITIES           BITMAP  DISCARDABLE     "res\\utilities.bmp"
+IDR_ALGORITHMS          BITMAP  DISCARDABLE     "res\\algorithms.bmp"
+IDR_EDIT                BITMAP  DISCARDABLE     "res\\edit.bmp"
+IDR_NETWORK             BITMAP  DISCARDABLE     "res\\network.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+END
+
+IDR_GRAPH TOOLBAR DISCARDABLE  32, 32
+BEGIN
+    BUTTON      ID_GRAPH_SELECT
+    SEPARATOR
+    BUTTON      ID_GRAPH_VERTEX
+    BUTTON      ID_GRAPH_EDGE
+    SEPARATOR
+    BUTTON      ID_GRAPH_REMOVE
+    SEPARATOR
+    BUTTON      ID_GRAPH_PROPERTIES
+END
+
+IDR_UTILITIES TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_UTILITIES_PREORDER
+    BUTTON      ID_UTILITIES_BFT
+    BUTTON      ID_UTILITIES_TOPO
+    SEPARATOR
+    BUTTON      ID_UTILITIES_EULER
+    BUTTON      ID_UTILITIES_HAMILTON
+    SEPARATOR
+    BUTTON      ID_UTILITIES_COLOR
+    SEPARATOR
+    BUTTON      ID_UTILITIES_TRANSITIVE_CLOSURE
+    BUTTON      ID_UTILITIES_VERTEX_COVER
+    SEPARATOR
+    BUTTON      ID_UTILITIES_CUT_VERTEX
+    BUTTON      ID_UTILITIES_BRIDGE_EDGE
+    SEPARATOR
+    BUTTON      ID_UTILITIES_CONNECTED_COMPONENT
+    BUTTON      ID_UTILITIES_BICONNECTED_COMPONENT
+    SEPARATOR
+    BUTTON      ID_UTILITIES_CYCLE
+END
+
+IDR_ALGORITHMS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_ALGORITHM_PRIM
+    BUTTON      ID_ALGORITHM_KRUSKAL
+    SEPARATOR
+    BUTTON      ID_ALGORITHM_SSP_DAG
+    BUTTON      ID_ALGORITHM_DIJKSTRA
+    BUTTON      ID_ALGORITHM_BELLMAN_FORD
+    BUTTON      ID_ALGORITHM_ASTAR
+    SEPARATOR
+    BUTTON      ID_ALGORITHM_FLOYD
+    BUTTON      ID_ALGORITHM_JOHNSON
+    SEPARATOR
+    BUTTON      ID_ALGORITHM_CRITICAL_PATH
+    SEPARATOR
+    BUTTON      ID_ALGORITHM_CHINESE_POSTMAN
+    BUTTON      ID_ALGORITHM_TSP
+END
+
+IDR_EDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_COPY
+END
+
+IDR_NETWORK TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_NETWORK_CHECK
+    BUTTON      ID_NETWORK_RESIDUAL
+    SEPARATOR
+    BUTTON      ID_NETWORK_FORD_FULKERSON
+    SEPARATOR
+    BUTTON      ID_NETWORK_MAXIMUM_BIPARTITE_MATCHING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Standard",                   ID_VIEW_TOOLBAR
+        MENUITEM "&Output",                     ID_VIEW_OUTPUT
+        MENUITEM "&Graph",                      ID_VIEW_GRAPH
+        MENUITEM "&Utilities",                  ID_VIEW_UTILITIES
+        MENUITEM "&Algorithms",                 ID_VIEW_ALGORITHMS
+        MENUITEM "Net&work",                    ID_VIEW_NETWORK
+        MENUITEM SEPARATOR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Thesis...",            ID_APP_ABOUT
+    END
+END
+
+IDR_GMLTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "&Delete",                     ID_EDIT_DELETE
+    END
+    POPUP "&Graph"
+    BEGIN
+        POPUP "&Generate"
+        BEGIN
+            MENUITEM "&Complete Graph",             ID_GRAPH_GENERATE_COMPLETEGRAPH
+
+            MENUITEM "&Random Graph",               ID_GRAPH_GENERATE_RANDOMGRAPH
+
+        END
+        MENUITEM "&Resize",                     ID_GRAPH_RESIZE
+        MENUITEM "&Clear",                      ID_GRAPH_CLEAR
+    END
+    POPUP "&Layout"
+    BEGIN
+        MENUITEM "&Ellipse",                    ID_LAYOUT_ELLIPSE
+    END
+    POPUP "&Algorithm"
+    BEGIN
+        POPUP "&Unweighted algorightm"
+        BEGIN
+            POPUP "Depth first traversal"
+            BEGIN
+                MENUITEM "Preorder traversal",          ID_UTILITIES_PREORDER
+
+                MENUITEM "Postorder traversal",         ID_UTILITIES_POSTORDER
+
+            END
+            MENUITEM "Breadth first traversal",     ID_UTILITIES_BFT
+            MENUITEM "Topological order traversal", ID_UTILITIES_TOPO
+            MENUITEM SEPARATOR
+            MENUITEM "Find Eulerian trail",         ID_UTILITIES_EULER
+            MENUITEM "Find Hamilton cycle",         ID_UTILITIES_HAMILTON
+            MENUITEM SEPARATOR
+            MENUITEM "Color this graph",            ID_UTILITIES_COLOR
+            MENUITEM SEPARATOR
+            MENUITEM "Transitive closure",          ID_UTILITIES_TRANSITIVE_CLOSURE
+
+            MENUITEM "Find vertex cover",           ID_UTILITIES_VERTEX_COVER
+
+            MENUITEM SEPARATOR
+            MENUITEM "Find articulation points",    ID_UTILITIES_CUT_VERTEX
+            MENUITEM "Find bridge edges",           ID_UTILITIES_BRIDGE_EDGE
+            MENUITEM SEPARATOR
+            MENUITEM "Connected components",        ID_UTILITIES_CONNECTED_COMPONENT
+
+            MENUITEM "Biconnected components",      ID_UTILITIES_BICONNECTED_COMPONENT
+
+            MENUITEM SEPARATOR
+            MENUITEM "Find cycles",                 ID_UTILITIES_CYCLE
+        END
+        POPUP "Edge weighted algorithm"
+        BEGIN
+            POPUP "Minimum cost spanning tree"
+            BEGIN
+                MENUITEM "Prim's algorithm",            ID_ALGORITHM_PRIM
+                MENUITEM "Kruskal's algorithm",         ID_ALGORITHM_KRUSKAL
+            END
+            POPUP "Single source shortest path"
+            BEGIN
+                MENUITEM "Algorithm for DAGs",          ID_ALGORITHM_SSP_DAG
+                MENUITEM "Dijkstra's algorithm",        ID_ALGORITHM_DIJKSTRA
+
+                MENUITEM "Bellman-Ford's algorithm",    ID_ALGORITHM_BELLMAN_FORD
+
+                MENUITEM "A-Star algorithm",            ID_ALGORITHM_ASTAR
+            END
+            POPUP "All pair shortest path"
+            BEGIN
+                MENUITEM "Floyd's algorithm",           ID_ALGORITHM_FLOYD
+                MENUITEM "Johnson's algorithm",         ID_ALGORITHM_JOHNSON
+            END
+            MENUITEM "Critical path analysis",      ID_ALGORITHM_CRITICAL_PATH
+
+        END
+        POPUP "Network algorithm"
+        BEGIN
+            MENUITEM "&Check valid network",        ID_NETWORK_CHECK
+            MENUITEM "&Contruct Residual Network",  ID_NETWORK_RESIDUAL
+            MENUITEM "Edmonds-Karp's algorithm",    ID_NETWORK_FORD_FULKERSON
+
+            MENUITEM "Maximum Bipartite Matching",  ID_NETWORK_MAXIMUM_BIPARTITE_MATCHING
+
+        END
+    END
+    POPUP "&Demo"
+    BEGIN
+        MENUITEM "Edmonds-Karp's algorithm",    ID_DEMO_FORD_FULKERSON
+        MENUITEM "A-Star algorithm",            ID_DEMO_ASTAR
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Standard",                   ID_VIEW_TOOLBAR
+        MENUITEM "&Output",                     ID_VIEW_OUTPUT
+        MENUITEM "&Graph",                      ID_VIEW_GRAPH
+        MENUITEM "&Utilities",                  ID_VIEW_UTILITIES
+        MENUITEM "&Algorithms",                 ID_VIEW_ALGORITHMS
+        MENUITEM "Net&work",                    ID_VIEW_NETWORK
+        MENUITEM SEPARATOR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Options",                    ID_TOOLS_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM "S&plit",                      ID_WINDOW_SPLIT, INACTIVE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help Topics",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&About Thesis...",            ID_APP_ABOUT
+    END
+END
+
+IDR_GRAPH MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Select",                     ID_GRAPH_SELECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Add New Vertex",             ID_GRAPH_VERTEX
+        MENUITEM "Add New &Edge",               ID_GRAPH_EDGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Delete",                     ID_GRAPH_REMOVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...",              ID_GRAPH_PROPERTIES
+    END
+END
+
+IDR_ANIMATION MENU DISCARDABLE 
+BEGIN
+    POPUP "&Animation"
+    BEGIN
+        MENUITEM "&Next",                       ID_ANIMATION_NEXT
+        MENUITEM "&Reset",                      ID_ANIMATION_RESET
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Automatic",                  ID_OPTIONS_AUTOMATIC
+        MENUITEM "&Manual",                     ID_OPTIONS_MANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "Delay Time",                  ID_OPTIONS_DELAYTIME
+    END
+END
+
+IDR_EDIT MENU DISCARDABLE 
+BEGIN
+    POPUP "Popup"
+    BEGIN
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM SEPARATOR
+        MENUITEM "Clea&r",                      ID_EDIT_CLEAR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Thesis"
+FONT 10, "Tahoma"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Dark2Bright Graph Demo 1.6",IDC_STATIC,40,10,95,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005 Dark2Bright",IDC_STATIC,40,25,105,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+    PUSHBUTTON      "Email",IDC_EMAIL_BUTTON,40,40,50,14
+END
+
+IDD_NEW_VERTEX_DIALOG DIALOGEX 0, 0, 155, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "New Vertex"
+FONT 10, "Tahoma", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_WEIGHT_EDIT,35,5,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME_EDIT,35,25,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_CHANGE_COLOR_BUTTON,70,44,15,14
+    DEFPUSHBUTTON   "OK",IDOK,95,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,25,50,14
+    LTEXT           "Weight :",IDC_STATIC,5,7,29,10
+    LTEXT           "Name :",IDC_STATIC,5,28,24,8
+    LTEXT           "Color :",IDC_STATIC,5,47,25,10
+    CONTROL         "",IDC_COLOR,"Static",SS_ETCHEDFRAME | SS_SUNKEN,35,45,
+                    15,14
+END
+
+IDD_NEW_GRAPH_DIALOG DIALOGEX 0, 0, 275, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "New Graph"
+FONT 10, "Tahoma", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,215,5,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,215,22,50,14
+    LTEXT           "Number of Vertices :",IDC_LABEL1,10,10,71,9
+    EDITTEXT        IDC_EDIT,90,7,50,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,140,8,10,
+                    12
+    LTEXT           "Property :",IDC_LABEL2,10,30,35,10,0,WS_EX_TRANSPARENT
+    LTEXT           "Type :",IDC_LABEL3,10,50,21,9,0,WS_EX_TRANSPARENT
+    CONTROL         "Directed",IDC_DIRECTED_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,90,30,45,10
+    CONTROL         "Undirected",IDC_UNDIRECTED_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,155,30,47,10
+    CONTROL         "Graph As Lists",IDC_LISTS_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,155,50,60,9
+    CONTROL         "Graph As Matrix",IDC_MATRIX_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,90,50,65,9
+END
+
+IDD_NEW_EDGE_DIALOG DIALOGEX 0, 0, 149, 85
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "New Edge"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_WEIGHT_EDIT,45,5,44,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME_EDIT,45,25,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_CHANGE_COLOR_BUTTON,75,45,13,14
+    EDITTEXT        IDC_CAPACITY_EDIT,45,64,44,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,100,5,44,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,25,44,14
+    LTEXT           "Weight :",IDC_STATIC,10,7,26,10
+    LTEXT           "Name :",IDC_STATIC,10,28,21,8
+    LTEXT           "Color :",IDC_STATIC,10,47,22,10
+    LTEXT           "Capacity :",IDC_STATIC,10,66,31,8
+    CONTROL         "",IDC_COLOR,"Static",SS_ETCHEDFRAME | SS_SUNKEN,45,45,
+                    13,14
+END
+
+IDD_OPTIONS_DIALOG DIALOGEX 0, 0, 169, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,10,30,150,135
+    PUSHBUTTON      "Close",IDOK,110,175,50,14
+    PUSHBUTTON      "Previous",IDC_PREV_BUTTON,10,5,45,15
+    PUSHBUTTON      "Next",IDC_NEXT_BUTTON,115,5,45,15
+END
+
+IDD_VERTEX_TAB DIALOG DISCARDABLE  0, 0, 142, 122
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Fast insert vertex",IDC_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,25,61,10
+    COMBOBOX        IDC_COMBO,80,5,55,40,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Weight type :",IDC_STATIC,5,5,40,10
+    LTEXT           "Default weight :",IDC_STATIC,20,40,45,10
+    EDITTEXT        IDC_WEIGHT_EDIT,80,38,55,12,ES_AUTOHSCROLL
+    LTEXT           "Default color :",IDC_STATIC,20,60,45,10
+    PUSHBUTTON      "...",IDC_CHANGE_COLOR_BUTTON,120,60,15,10
+    CONTROL         "",IDC_COLOR,"Static",SS_ETCHEDFRAME | SS_SUNKEN | 
+                    WS_BORDER,80,60,15,10
+    DEFPUSHBUTTON   "&Apply",ID_APPLY_BUTTON,80,101,55,12
+END
+
+IDD_EDGE_TAB DIALOG DISCARDABLE  0, 0, 142, 118
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Fast insert edge",IDC_FAST_INSERT_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,35,105,10
+    COMBOBOX        IDC_COMBO,80,5,55,40,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Weight type :",IDC_STATIC,5,5,40,10
+    LTEXT           "Default weight :",IDC_STATIC,20,50,45,10
+    EDITTEXT        IDC_WEIGHT_EDIT,80,48,55,12,ES_AUTOHSCROLL
+    LTEXT           "Default color :",IDC_STATIC,20,65,45,10
+    PUSHBUTTON      "...",IDC_CHANGE_COLOR_BUTTON,120,65,15,10
+    CONTROL         "Network edge",IDC_NETWORK_EDGE_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,20,55,10
+    LTEXT           "Default capacity :",IDC_STATIC,20,80,55,10
+    EDITTEXT        IDC_CAPACITY_EDIT,80,80,55,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_COLOR,"Static",SS_ETCHEDFRAME | SS_SUNKEN | 
+                    WS_BORDER,80,65,15,10
+    DEFPUSHBUTTON   "&Apply",IDC_APPLY_BUTTON,80,100,55,12
+END
+
+IDD_VERTEX_PROPERTIES_DIALOG DIALOGEX 0, 0, 163, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Properties"
+FONT 10, "Tahoma", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,115,8,40,12
+    PUSHBUTTON      "Cancel",IDCANCEL,115,26,40,12
+    LTEXT           "Number :",IDC_STATIC,10,11,31,9
+    EDITTEXT        IDC_NUMBER_EDIT,50,8,25,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Weight :",IDC_STATIC,10,49,29,8
+    EDITTEXT        IDC_WEIGHT_EDIT,50,45,40,12,ES_AUTOHSCROLL
+    LTEXT           "Name :",IDC_STATIC,10,67,29,8
+    EDITTEXT        IDC_NAME_EDIT,50,65,65,12,ES_AUTOHSCROLL
+    LTEXT           "Color :",IDC_STATIC,10,84,24,10
+    CONTROL         "",IDC_COLOR,"Static",SS_ETCHEDFRAME | SS_SUNKEN,50,84,
+                    40,12
+    PUSHBUTTON      "...",IDC_CHANGE_COLOR_BUTTON,100,84,15,12
+    LTEXT           "Type :",IDC_STATIC,10,30,30,8
+    EDITTEXT        IDC_TYPE_EDIT,50,26,25,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_EDGE_PROPERTIES_DIALOG DIALOGEX 0, 0, 175, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Properties"
+FONT 10, "Tahoma", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,5,40,12
+    PUSHBUTTON      "Cancel",IDCANCEL,125,23,40,12
+    LTEXT           "",IDC_MODEL,10,9,110,8
+    LTEXT           "Weight :",IDC_STATIC,10,47,29,8
+    EDITTEXT        IDC_WEIGHT_EDIT,50,45,40,12,ES_AUTOHSCROLL
+    LTEXT           "Name :",IDC_STATIC,10,80,29,8
+    EDITTEXT        IDC_NAME_EDIT,50,79,65,12,ES_AUTOHSCROLL
+    LTEXT           "Color :",IDC_STATIC,10,98,24,10
+    CONTROL         "",IDC_COLOR,"Static",SS_ETCHEDFRAME | SS_SUNKEN,50,98,
+                    40,12
+    PUSHBUTTON      "...",IDC_CHANGE_COLOR_BUTTON,100,98,15,12
+    LTEXT           "Type :",IDC_STATIC,10,28,30,8
+    LTEXT           "Capacity :",IDC_STATIC,10,63,35,10
+    EDITTEXT        IDC_CAPACITY_EDIT,50,63,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TYPE_EDIT,50,27,25,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_ANIMATION_DIALOG DIALOGEX 0, 0, 367, 243
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+MENU IDR_ANIMATION
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_OUTPUT_DIALOG DIALOGEX 0, 0, 307, 248
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_VSCROLL | 
+    WS_HSCROLL | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_RESIZE_GRAPH_DIALOG DIALOGEX 0, 0, 109, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "RESIZE GRAPH"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,10,50,35,12
+    PUSHBUTTON      "Cancel",IDCANCEL,65,50,35,12
+    LTEXT           "Current size :",IDC_STATIC,10,14,38,8
+    LTEXT           "New size :",IDC_STATIC,10,32,31,10
+    EDITTEXT        IDC_CURRENT_EDIT,65,10,35,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_NEW_EDIT,65,30,35,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,100,30,5,
+                    15
+END
+
+IDD_GENERATE_GRAPH_DIALOG DIALOGEX 0, 0, 169, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "GENERATE GRAPH"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NUMV_EDIT,90,16,30,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_VERTEX_SPIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,135,15,10,15
+    COMBOBOX        IDC_VERTEX_COMBO,90,35,30,40,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_VWU_EDIT,90,55,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_NUME_EDIT,90,90,30,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_EDGE_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,135,90,5,
+                    15
+    COMBOBOX        IDC_EDGE_COMBO,91,108,30,45,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EWU_EDIT,90,127,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Network edge",IDC_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,145,55,10
+    EDITTEXT        IDC_ECU_EDIT,90,156,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,10,180,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,180,50,14
+    LTEXT           "Number of vertices :",IDC_STATIC,20,18,60,10
+    LTEXT           "Number of edges :",IDC_STATIC,20,90,55,8
+    LTEXT           "Type :",IDC_STATIC,20,37,25,10
+    LTEXT           "Upper bound:",IDC_STATIC,20,57,45,10
+    LTEXT           "Type :",IDC_STATIC,20,110,20,10
+    LTEXT           "Weight upper bound :",IDC_STATIC,20,130,65,10
+    GROUPBOX        "Vertex :",IDC_STATIC,10,5,150,70
+    GROUPBOX        "Edge :",IDC_STATIC,10,80,150,95
+    LTEXT           "Capacity upper bound :",IDC_STATIC,20,160,70,8
+END
+
+IDD_GRAPH_PROPERTIES_DIALOG DIALOGEX 0, 0, 179, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "GRAPH PROPERTIES"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Close",IDOK,10,120,160,13
+    LTEXT           "Structure :",IDC_STATIC,10,10,30,8
+    CONTROL         "",IDC_STRUCTURE,"Static",SS_LEFTNOWORDWRAP | SS_NOTIFY | 
+                    SS_CENTERIMAGE | SS_SUNKEN | WS_GROUP,110,10,60,10
+    LTEXT           "Maximum number of vertices :",IDC_STATIC,10,25,90,10
+    LTEXT           "",IDC_MAX_SIZE,110,25,20,10,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "Number of vertices :",IDC_STATIC,10,57,60,8
+    LTEXT           "Number of edges :",IDC_STATIC,10,72,56,8
+    LTEXT           "Type :",IDC_STATIC,10,42,20,8
+    LTEXT           "Vertex's weight type :",IDC_STATIC,10,85,65,10
+    LTEXT           "Edge's weight type :",IDC_STATIC,10,100,60,10
+    LTEXT           "",IDC_VERTEX_NUM,110,55,20,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_EDGE_NUM,110,70,20,10,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_TYPE,110,40,35,10,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_VERTEX_TYPE,110,85,25,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "",IDC_EDGE_TYPE,110,100,25,10,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_DELAY_TIME_DIALOG DIALOGEX 0, 0, 149, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Time Delay"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,44,60,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,44,60,14
+    LTEXT           "Old time delay :",IDC_STATIC,5,8,50,10
+    LTEXT           "Static",IDC_OLD,65,5,35,13,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "New time delay :",IDC_STATIC,5,27,50,10
+    EDITTEXT        IDC_NEW_EDIT,65,24,35,13,ES_AUTOHSCROLL
+    LTEXT           "miliseconds",IDC_STATIC,105,5,40,10
+    LTEXT           "miliseconds",IDC_STATIC,105,25,40,10
+END
+
+IDD_SEARCH_DIALOG DIALOG DISCARDABLE  0, 0, 129, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SEARCH"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_START_EDIT,40,5,30,12,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_START_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,71,5,10,
+                    10
+    EDITTEXT        IDC_GOAL_EDIT,40,25,30,12,ES_AUTOHSCROLL
+    CONTROL         "Spin2",IDC_GOAL_SPIN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,75,25,5,
+                    10
+    DEFPUSHBUTTON   "OK",IDOK,90,5,30,12
+    PUSHBUTTON      "Cancel",IDCANCEL,90,25,30,12
+    LTEXT           "Start :",IDC_STATIC,5,5,25,8
+    LTEXT           "Goal :",IDC_STATIC,5,25,20,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "Dark2Bright\0"
+            VALUE "FileDescription", "Dark2Bright Draw Graph Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Thesis\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Thesis.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Dark2Bright Graph Demo\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_NEW_VERTEX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_NEW_GRAPH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_NEW_EDGE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_OPTIONS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_VERTEX_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_EDGE_TAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_VERTEX_PROPERTIES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_EDGE_PROPERTIES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_ANIMATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_OUTPUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 233
+    END
+
+    IDD_RESIZE_GRAPH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 102
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 63
+    END
+
+    IDD_GENERATE_GRAPH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 162
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_GRAPH_PROPERTIES_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DELAY_TIME_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_SEARCH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 122
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_EDGE_CURSOR         CURSOR  DISCARDABLE     "res\\edge.cur"
+IDC_VERTEX_CURSOR       CURSOR  DISCARDABLE     "res\\vertex.cur"
+IDC_REMOVE_CURSOR       CURSOR  DISCARDABLE     "res\\remove.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_VERTEX_TAB DLGINIT
+BEGIN
+    IDC_COMBO, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_COMBO, 0x403, 4, 0
+0x6e49, 0x0074, 
+    IDC_COMBO, 0x403, 6, 0
+0x6c46, 0x616f, 0x0074, 
+    0
+END
+
+IDD_EDGE_TAB DLGINIT
+BEGIN
+    IDC_COMBO, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_COMBO, 0x403, 4, 0
+0x6e49, 0x0074, 
+    IDC_COMBO, 0x403, 6, 0
+0x6c46, 0x616f, 0x0074, 
+    0
+END
+
+IDD_GENERATE_GRAPH_DIALOG DLGINIT
+BEGIN
+    IDC_VERTEX_COMBO, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_VERTEX_COMBO, 0x403, 4, 0
+0x6e49, 0x0074, 
+    IDC_EDGE_COMBO, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_EDGE_COMBO, 0x403, 4, 0
+0x6e49, 0x0074, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Dark2Bright Graph Demo"
+    IDR_GMLTYPE             "\nGraph\nGML\nDark2Bright Graph Files (*.gml)\n.gml\nDark2Bright.Graph\nGML Files"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Graph"
+    AFX_IDS_IDLEMESSAGE     "For Help, press F1"
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRAPH_SELECT         "Select vertex or edge\nSelect"
+    ID_GRAPH_VERTEX         "Add new vertex to this graph\nAdd vertex"
+    ID_GRAPH_EDGE           "Add new edge to this graph\nAdd edge"
+    ID_GRAPH_REMOVE         "Remove vertex or edge\nRemove"
+    ID_GRAPH_PROPERTIES     "Display properties of vertex or edge\nProperties"
+    ID_TOOLS_OPTIONS        "Options for creation of vertices and edges"
+    ID_EDIT_DELETE          "Delete selected vertex or edge"
+    ID_UTILITIES_BFT        "Breadth First Traversal\nBreadth First Traversal"
+    ID_UTILITIES_TOPO       "Topological Order Traversal\nTopological Order Traversal"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ALGORITHM_PRIM       "Run Prim's algorithm\nPrim"
+    ID_ALGORITHM_KRUSKAL    "Run Kruskal's algorithm\nKruskal"
+    ID_ALGORITHM_DIJKSTRA   "Run Dijkstra's algorithm\nDijkstra"
+    ID_ALGORITHM_FLOYD      "Run Floyd's algorithm\nFloyd"
+    ID_UTILITIES_EULER      "Eulerian Traversal\nFind Euler trail"
+    ID_UTILITIES_CUT_VERTEX "Find Articulation Points\nArticulation points"
+    ID_UTILITIES_COLOR      "Color this graph\nColor"
+    ID_ALGORITHM_BELLMAN_FORD "Run Bellman-Ford's algorithm\nBellman-Ford"
+    ID_UTILITIES_BRIDGE_EDGE "Find Bridge Edges\nBridge Edges"
+    ID_UTILITIES_CONNECTED_COMPONENTS "Find Connected Components"
+    ID_UTILITIES_BICONNECTED_COMPONENTS "Find Biconnected Components"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_UTILITIES_CONNECTED_COMPONENT 
+                            "Find Connected Components of this graph\nConnected Components"
+    ID_UTILITIES_BICONNECTED_COMPONENT 
+                            "Find Biconnected Components of this graph\nBiconnected Components"
+    ID_UTILITIES_TRANSITIVE_CLOSURE 
+                            "Find Transitive Closure\nTransitive Closure"
+    ID_UTILITIES_CYCLE      "Find Cycles\nCycles"
+    ID_ALGORITHM_CRITICAL_PATH "Critical Path Analysis\nCritical path"
+    ID_ALGORITHM_SSP_DAG    "Single-source shortest paths in DAGs\nDAGs"
+    ID_NETWORK_CHECK        "Check if graph is a valid network\nCheck"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NETWORK_FORD_FULKERSON "Run Ford-Fulkerson's algorithm\nFord-Fulkerson"
+    ID_NETWORK_RESIDUAL     "Construct Residual Network\nResidual network"
+    ID_UTILITIES_VERTEX_COVER "Find vertex cover\nVertex cover"
+    ID_GRAPH_RESIZE         "Enlarge this graph"
+    ID_GRAPH_CLEAR          "Clear this graph"
+    ID_LAYOUT_ELLIPSE       "Layout this graph in ellipse\nEllipse layout"
+    ID_OPTIONS_DELAYTIME    "Set delay time"
+    ID_DEMO_FORDFULKERSON   "Demo Edmonds-Karp's algorithm"
+    ID_NETWORK_MAXIMUM_BIPARTITE_MATCHING 
+                            "Find Maximum Bipartite Matching\nMaximum Bipartite Matching"
+    ID_ALGORITHM_JOHNSON    "Run Johnson's algorithm\nJohnson"
+    ID_UTILITIES_PREORDER   "Preorder traversal\nPreorder"
+    ID_UTILITIES_POSTORDER  "Postorder traversal\nPostorder"
+    ID_UTILITIES_HAMILTON   "Hamilton Traversal\nFind Euler circuit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ALGORITHM_ASTAR      "Run A-Star algorithm\nA-Star"
+    ID_ALGORITHM_TSP        "Solve travelling salesperson problem\nTravelling salesperson"
+    ID_ALGORITHM_CHINESE_POSTMAN 
+                            "Solve chinese postman problem\nChinese postman"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Thesis.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
